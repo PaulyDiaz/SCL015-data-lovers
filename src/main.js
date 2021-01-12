@@ -25,7 +25,7 @@ botonTodos.addEventListener("click", mostrarCampeones);
 
 function mostrarCampeones() {
 document.getElementById("inicio").style.display="none";
-document.getElementById("contenedorCampeones").style.display="column";
+document.getElementById("contenedorCampeones").style.display="box";
 let campeones = document.getElementById("containerChampions");
 for (let i=0 ; i<dataArrayLol.length; i++) {
 /*console.log(dataArrayLol[i].id);*/
@@ -34,10 +34,14 @@ campeones.innerHTML += `<div class="container-box">
 <h2 class="nameBox"> ${dataArrayLol[i].name}</h2>
 <img class="icons" src=" ${dataArrayLol[i].img}">
 <h4 class="roles">${dataArrayLol[i].tags}</h4>
-<p class="propaganda"> ${dataArrayLol[i].blurb} </p>
+<p class="attack"> Ataque ${dataArrayLol[i].info.attack} </p>
+<p class="defense"> Defensa ${dataArrayLol[i].info.defense} </p>
+<p class="magic"> Magia ${dataArrayLol[i].info.magic} </p>
+<p class="difficulty"> Dificultad ${dataArrayLol[i].info.difficulty} </p>
+
 </div>
 </div>`;
-console.log(dataArrayLol[i].img);
+console.log(dataArrayLol[i].info.attack);
 }
 }
 
