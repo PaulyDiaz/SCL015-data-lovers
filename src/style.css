@@ -181,7 +181,7 @@ position: absolute;
 }
   
 
-footer{
+footer {
   
 }
 
@@ -221,7 +221,7 @@ footer{
 
 
 #contenedorCampeones {
-  display: flex;
+/*display: flex;*/
   justify-content: center;
   background-color: rgb(62, 13, 223);
   width: auto;
@@ -230,6 +230,7 @@ footer{
 }
 
 #contenedorBotones{
+  display: none;
   width: auto;
   height:auto;
 }
