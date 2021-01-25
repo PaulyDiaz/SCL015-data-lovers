@@ -4,72 +4,67 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+ 
 body{
   background: rgb(206, 206, 206);
 }
-.nav_bar {
+.navBar {
   background: #000000;
   padding-top: 10px;
   padding-bottom: 20px;
   width: 100%;
 }
-
-.nav_enlaces {
+ 
+.navEnlaces {
   display: flex;
   justify-content:flex-end;
   flex-wrap: nowrap;
   flex-direction: row;
 }
-
-.nav_enlaces a{
+ 
+.navEnlaces a{
   display: flex;
   text-decoration: none;  
   color: white;
   font-family: 'Roboto Slab', serif;
-  font-size: 25px;
+  font-size: 15px;
 }
-
-
-/*.nav_enlaces:hover {
-background: grey;
-}*/
-
+ 
 .link1 {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(132, 0, 255, 0);
+  width: auto;
+  height: 40px;
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
   border-radius: 25px;
   
 }
-
+ 
 .link1:hover, .link1:focus {
   background-color: rgba(63, 63, 63, 0.549);
 }
-
+ 
 .link2 {
   display: flex;
   align-items: center;
   background-color: rgba(132, 0, 255, 0);
- /* width: auto;
-  height: 40px;*/
+  width: auto;
+  height: 40px;
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
   border-radius: 25px;
 }
-
+ 
 .link2:hover, .link2:focus {
   background-color: rgba(63, 63, 63, 0.549);
 }
-
-
-/* Lista desplegable campeones -----> 
-
+ 
+ 
 .boton_desplegable {
   display: flex;
   justify-content: center;
@@ -85,17 +80,17 @@ background: grey;
   font-size: 15px;
   border-color: transparent;
   border-radius: 25px;
-}*/
-
+}
+ 
 .boton_desplegable:hover, .boton_desplegable:focus {
   background-color: rgba(63, 63, 63, 0.549);
   outline:none;
 }
-
+ 
 .lista_campeones {
   display: inline-block;
 }
-
+ 
 .dropdown-content {
   display: none;
   position: absolute;
@@ -106,22 +101,22 @@ background: grey;
   z-index: 1;
   outline:none;
 }
-
+ 
 .dropdown-content a {
   color: rgb(133, 136, 139);
   padding: 12px 16px;
   display: block;
 }
-
+ 
 #botonCampeones:hover {
   background-color: rgba(179, 179, 179, 0.445);
   
   }
-
+ 
 .show {display: block;}
-
+ 
 /* <-------- Lista desplegable campeones */
-
+ 
 .link4 {
   display: flex;
   align-items: center;
@@ -133,26 +128,26 @@ background: grey;
   cursor: pointer;
   border-radius: 25px;
 }
-
+ 
 .link4:hover, .link4:focus {
   background-color: rgba(63, 63, 63, 0.549);
 }
-
+ 
 /* nav contiene estilos tanto para la barra superior e inferior - se recomienda dar una clase diferente a cada uno -->>
-
+ 
 nav{
   background: greenyellow;
   padding: 10px;
 }
-
+ 
 <<-- nav contiene estilos tanto para la barra superior e inferior - se recomienda dar una clase diferente a cada uno */
-
+ 
 .main {
   width: 100%;
   height:100% ; 
 }
-
-.contenedor_principal {
+ 
+.contenedorPrincipal {
   display: flex;
   justify-content: center;
   background-color: black;
@@ -160,96 +155,116 @@ nav{
   height: 680px;
   padding-top: 30px;
 }
-
-.contenedor_video {
+ 
+.contenedorVideo {
   display: flex;
   justify-content: center;
   width:100%;
   height: 600px;
   
 }
-.video2 {
+.VideoPortada {
   width: 100%;
   height: 100%; 
 }
-
+ 
 .logo {
 position: absolute;
-
+ 
 }
   
-
-/* footer */
-footer{
+ 
+footer {
   
 }
-
-.redes_sociales {
+ 
+.redesSociales {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  right: 0;
   width: 100%;
-  height: 60px;
+  font-size: 2.5rem;
+  align-items: flex-end;
+  height: 150px;
   background-color: #000000;
+ 
 }
-
-.enlaces_rrss {
-  display: flex;
-  justify-content: space-evenly;
+ 
+.icons{
+  justify-content: space-between;
+}
+/*.enlaces_rrss {
+  display: space-;
+  justify-content:;
   flex-direction: row;
 }
-
+ 
 .enlaces_rrss a{
   display: flex;
   text-decoration: none;  
   color: white;
   font-family: 'Roboto Slab', serif;
-  font-size: 15px;
-}
-
-
-
-
-
-
-
-#contenedorCampeones {
-  display: flex;
+  font-size: 30px;
+}*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+#contenedorContenedores {
+/*display: flex;*/
   justify-content: center;
-  background-color: rgb(62, 13, 223);
-  
-
+  background-color: rgb(22, 165, 158);
+  width: auto;
+  height: auto;
+ 
 }
-
+ 
 #contenedorBotones{
+  display: none;
   
+  width: auto;
+  height: 50px;
 }
-
-
-#containerChampions{
+ 
+ 
+#contenedorCampeones{
  display: flex;
  justify-content: center;
  background-color: purple;
  flex-wrap: wrap;
-
+ height: auto;
+ width: auto;
+ 
 }
+
+/*#contendorCampeones img{
+  
+}*/
+
+
 /*este es el padre de todos los cuadrados*/
 .container-box{
   display: flex;
   justify-content: right;
-  flex-direction: row;
+  flex-direction: row-reverse;
   background-color: rgb(180, 180, 180);
-  padding-left: 100px;
-  padding-right: 100px;
+  width: auto;
+  height: auto;
+  padding-left: 80px;
+  padding-right: 80px;
   margin: 10px;
 }
-
-.container-box a{
+ 
+container-box a{
   text-decoration: none;
   color: black;
 }
-
+ 
 .box{
-  width: 250px;
+  width: 350px;
   height: 280px;
   padding: 10px;
   margin: 10px;
@@ -267,13 +282,13 @@ footer{
      
      
 }
-
+ 
 .box:hover{
   transform: translate(5px, -5px);
-  box-shadow: -10px 10 px 20 px -10px rgb(134, 61, 61)
-
+  box-shadow: -10px 10 px 20 px -10px rgb(59, 58, 58)
+ 
 }
-
+ 
 .box .icons,
 .box h2,
 .box h4,
@@ -283,62 +298,62 @@ footer{
   transition: all 200ms;
   
 }
-
+ 
 .box .icons{
   font-size: 10px;
   transform: translateY(30px);
-
+ 
 }
-
+ 
 .box:hover .icons{
   color: white;
   font-size: 30px;
   transform: translateY(0);
-
+ 
 }
-
+ 
 .box h2,
 .box h4, 
 .box p{
   margin-top: 10px;
-
+ 
 }
-
+ 
 .box h2{
   font-size: 30px;
   transform: translateY(30px);
 }
-
+ 
 .box h4{
-  font-size: 25px;
+  font-size: 20px;
   top: 13px;
-
+ 
   
 }
-
+ 
 .box:hover h2, h4{
   transform: translateY(0);
-  color: rgb(123, 212, 235);
+  color: rgb(219, 184, 184);
 }
-
+ 
 .box p{
   font-size: 14px;
   transform: translateY(100PX);
   opacity: 0;
 }
-
+ 
 .box:hover p{
   transform: translateY(0);
   opacity: 1;
   color: white;
-
+ 
 }
-
-
+ 
+ 
 .box .background-hover{
   width: 100px;
   height: 100px;
-
+  background: red;
   position: absolute;
   top: 250px;
   left: -170px;
@@ -346,12 +361,12 @@ footer{
   transition: all 50ms;
   
 }
-
+ 
 .box:hover .background-hover{
   width: 400px;
   height: 400px;
   top: -70px;
   left: -70px;
-
+ 
 }
-
+ 
